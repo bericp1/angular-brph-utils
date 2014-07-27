@@ -1,0 +1,19 @@
+{
+  "name": "angular-brph-utils",
+  "version": "0.0.0",
+  "authors": [
+    "Brandon Phillips <bericp1@gmail.com>"
+  ],
+  "description": "A collection of angular components that perform common functions.",
+  "main": "index.js",
+  "license": "MIT",
+  "homepage": "https://github.com/bericp1/angular-brph-utils",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".idea"
+  ]
+}
