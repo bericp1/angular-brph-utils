@@ -5,9 +5,9 @@
     .directive('brphBlockClick', function(){
       return {
         restrict : 'A',
-        link: function($elem){
-          $elem.click(function($event){
-            $event.preventDefault();
+        link: function(scope, $elem){
+          $elem.click(function(event){
+            event.preventDefault();
           });
         }
       };
