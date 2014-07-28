@@ -34,6 +34,21 @@
           });
         }
       };
+    }])
+    .directive('match', [function () {
+      return {
+        restrict: 'A',
+        scope:true,
+        require: 'ngModel',
+        link: function (scope, elem, attrs, control) {
+          var checker = function () {
+            return scope.$eval(attrs.ngModel) == scope.$eval(attrs.match);
+          };
+          scope.$watch(checker, function (n) {
+            control.$setValidity("match", n);
+          });
+        }
+      };
     }]);
 
 })(angular);
