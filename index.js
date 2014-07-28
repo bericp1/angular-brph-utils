@@ -6,7 +6,7 @@
       return {
         restrict : 'A',
         link: function(scope, $elem){
-          $elem.click(function(event){
+          $elem.on('click', function(event){
             event.preventDefault();
           });
         }
